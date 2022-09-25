@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- ================== for trust slider ================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+  <!-- ======================End=========== -->
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    #my_dropdown_2:hover #my_dropdown_1{
+      display: block;
+    }
+#my_dropdown_1{
+  margin: 0;
+}
+
+    #nav-item-1:hover {
+      border-bottom: 2px solid #4c84d3;
+    }
+
+    .bg-primary {
+      background: none;
+    }
+
+    .menu_area {
+      position: static;
+    }
+
+    .mega_area {
+      position: absolute;
+      width: 50%;
+      /* right: 18%; */
+    }
+
+    @media screen and (max-width: 1199px) {
+      .mega_area {
+      position: absolute;
+      width: 100%;
+      right: 18%;
+    }
+    }
+
+    #averos_logo {
+      height: 50px;
+      width: 100%;
+    }
+
+    .custom_height {
+      height: 35rem;
+      width: 100vw;
+    }
+
+    #transparent,
+    #section3-1 {
+      padding-bottom: 1rem;
+      width: auto;
+      background-color: rgba(29, 22, 22, 0.9);
+    }
+
+    #transparent {
+      opacity: 1;
+    }
+
+    #my_img {
+      filter: grayscale(100);
+      height: 80px;
+    }
+
+    #my_img:hover {
+      filter: grayscale(0);
+    }
+
+    @media screen and (max-width: 568px) {
+      #my_img {
+        filter: grayscale(0);
+      }
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 900px) {
+      .taimoor {
+        display: none;
+      }
+
+      .custom {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    #hihi1 {
+      margin-bottom: 3px;
+      justify-content: center;
+      background: url(./my-images/mobile-slider-1.png);
+      color: #e9ecf3;
+      background-size: 100vw;
+      background-repeat: no-repeat;
+      height: 60vh;
+      width: 100vw;
+    }
+
+    #hihi2 {
+      height: 60vh;
+      width: 100vw;
+      color: #e9ecf3;
+      background: url(./my-images/mobile-slider-1.png);
+      margin-bottom: 3px;
+      background-size: 100vw;
+      background-repeat: no-repeat;
+    }
+
+    #hihi3 {
+      /* min-height: 45vh; */
+      height: 60vh;
+      width: 100vw;
+      margin-bottom: 3px;
+      color: #e9ecf3;
+      /* background: #6875B8; */
+
+      background: url(./my-images/mobile-slider-3.jpg);
+      /* color: #e9ecf3; */
+      background-repeat: no-repeat;
+      background-size: 100vw;
+      /* background-position: center; */
+    }
+
+    .custom_height {
+      height: 35rem;
+    }
+
+    .List_style {
+      list-style-type: none !important;
+    }
+
+    .custom_con {
+      max-width: 57rem;
+      width: 100%;
+    }
+
+    .footer_main {
+      background-color: #f4f6f9;
+    }
+
+    .footer_area {
+      padding: 3.7rem 0 3.7rem 0;
+      border-bottom: 1px solid #e9ecf3;
+    }
+
+    .custom_row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .ul_custom {
+      display: block;
+
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+    }
+    @media screen and (max-width: 568px) {
+      .ul_custom {
+      display: block;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 0;
+
+     
+    }
+    }
+
+    .ul_custom li {
+      margin-bottom: 0.9em;
+      margin-left: 0.5rem;
+    }
+
+    .ul_custom li a {
+      text-decoration: none;
+      font-weight: lighter;
+      color: rgb(0, 0, 0);
+    }
+
+    .footer_down {
+      background-color: #514875;
+    }
+
+    .footer_down .container .row .col-sm-6 p {
+      color: #f4f6f9;
+    }
+
+    @media (max-width: 768px) {
+      .ul_custom {
+        background-color: #fff;
+      }
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 900px) {
+      .taimoor {
+        display: none;
+      }
+
+      .custom {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    @media screen and (max-width: 990px) {
+      #item {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        background: rgb(0, 105, 175);
+      }
+
+      /* .color_white{
+        color: #fff;
+      } */
+    }
+
+    /* ========================================================================================= */
+    /* for slider  */
+    .Taimoor_height {
+      /* width: 100vw !important; */
+      height: 40rem !important;
+    }
+
+    /* product section  */
+    .my_img {
+      transition: transform 0.8s;
+      height: 10rem;
+      width: 22rem;
+      /* Animation */
+    }
+
+    .my_img:hover {
+      transform: scale(1.1);
+    }
+
+    /* for my area  */
+    .my_area:hover {
+      border: 1px solid black;
+    }
+
+    /* trusted by  */
+    .colorless {
+      filter: grayscale(100);
+    }
+
+    .colorless:hover {
+      filter: grayscale(0);
+    }
+
+    .nav-navbar {
+      background: #000;
+    }
+
+    #btn-more {
+      background: #4c84d3;
+      color: white;
+    }
+
+    #btn-contact {
+      border: 1px solid #4c84d3;
+      color: black;
+    }
+
+    #btn-contact:hover {
+      border: 1px solid #4c84d3;
+      background: #4c84d3;
+
+      color: white;
+    }
+
+    #btn-contact-slid {
+      border: 1px solid white;
+      color: white;
+    }
+
+    #btn-contact-slid:hover {
+      border: 1px solid #4c84d3;
+      background: #4c84d3;
+
+      color: white;
+    }
+
+    #slider_pad {
+      padding-top: 8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-light bg-light p-sm-0 m-sm-0 p-md-0 m-md-0" id="my_D_Slider">
+    <div class="container-fluid m-0 ">
+      <a class="navbar-brand ms-lg-5 ms-md-4 ms-sm-1  me-5" href="#"><img src="./my-images/logo.png" alt="" id="averos_logo" /></a>
+      <button class="navbar-toggler e-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse container-xxl m-0 navbar-collapse" style="float: right;" id="navbarSupportedContent">
+        <div id="item" class="m-0 p-0">
+          <ul class="navbar-nav mx-auto">
+            <!-- <li class="nav-item  ">
+                <a class="nav-link active" aria-current="page" href="#">Technology</a>
+  
+              </li> -->
+            <li class="nav-item dropdown " >
+              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                VISUAL AI INSPECTION
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item mt-1" href="./pages/medical.html">Medical (QAOS)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item mt-1" href="./pages/caps-filling-inspection.html">Caps Filling Inspection</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item mt-1" href="./pages/lays-chips.html">Lays chips Counting $ Detection</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item mt-1" href="./pages/laser-maker.html">Laser Marker Cone</a>
+                </li>
+                <li>
+                  <a class="dropdown-item mt-1" href="./pages/textile-soft.html">textile (Soft package project)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item mt-1" href="./pages/injection-mold.html">Injection Mold Inspection</a>
+                </li>
+                <li>
+                  <a class="dropdown-item mt-1" href="#">Rice Quality Inspection</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown menu_area">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                VIDEO ANALYTICS
+              </a>
+              <div class="dropdown-menu mega_area" aria-labelledby="navbarDropdown">
+                <!-- <div class="row"> -->
+                <div class="row justify-content-center">
+                  <div class="col-sm-12 col-md-12 col-lg-3 m-lg-3">
+                    <h6 style="width: 100%">Retail Shops</h6>
+                    <a class="dropdown-item mt-1" href="./pages/RS-cctv-moni.html">CCTV MOnitoring & Alerts</a>
+                    <a class="dropdown-item mt-1" href="./pages/coustomer-tracking.html">Customer Tracking
+                    </a>
+                  </div>
+
+                  <div class="col-sm-12 col-md-12 col-lg-3 m-lg-3">
+                    <h6>Factory</h6>
+                    <a class="dropdown-item mt-1" href="./pages/factory-cctv.html">CCTV Monitoiring & Alerts</a>
+                    <a class="dropdown-item mt-1" href="./pages/smoke-detaction.html">
+                      Smoke Detection</a>
+                  </div>
+
+                  <div class="col-sm-12 col-md-12 col-lg-3 m-lg-3">
+                    <h6>Security</h6>
+                    <a class="dropdown-item mt-1" href="./pages/gun-detaction.html"> Gun Detection</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle color_white" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                OCR SOLUTIONS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item mt-1" href="./pages/box-ocr(inventory).html">Box OCR (Inventory)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item mt-1" href="./pages/CNIC-Detaction.html">
+                    CNIC Number Detection</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item mt-1" href="./pages/PDF-data.html">PDF Data Extraction</a>
+                </li>
+                <li>
+                  <a class="dropdown-item mt-1" href="#">Receipts Data Extraction</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown " role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Support</a>
+            </li> -->
+
+            <!-- <li class="nav-item border rounded border-primary btn btn-lg-lg">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+            </li> -->
+
+            <li class="nav-item" id="nav-item-1">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+            </li>
+
+            <li class="nav-item mx-2 dropdown border-0" id="my_dropdown_2">
+              <a href="#" aria-current="page" class="nav-link bi bi-search ps-5" id="navbarDropdown-search"></a>
+
+              <ul class="dropdown-menu bg-light" id="my_dropdown_1" aria-labelledby="navbarDropdown-search">
+                <form class="d-flex dropdown-item collapse border-dark border-3">
+                  <input class="rounded" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-success">Search</button>
+                </form>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================= Slider Section ======================================= -->
+
+  <section class="container-fluid">
+    <div id="carouselExampleInterval" class="carousel slide d-lg-block d-md-block d-xl-block d-xxl-block d-none"
+      data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="./my-images/mobile-banner-6.jpg" class="img-fluid d-block custom_height w-100 img-responsive"
+            alt="..." />
+
+          <div class="carousel-caption">
+            <div class="custom">
+              <div class="   " id="transparent">
+                <h2 class="h-2 pt-2">
+                  Disrupting the Computer Vision landscape
+                </h2>
+                <p class="lead">
+                  Disrupt Lab is an intelligent visual AI company, designed to
+                  extract data from visual Sensors.
+                </p>
+
+                <button class="btn m-2" id="btn-contact-slid">
+                  Learn more
+                </button>
+              </div>
+              <div class="taimoor ms-5">
+                <!-- <img src="./Images/home-banner-navibees_app(1).png" class="img-responsive w-100 h-auto" alt="" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./my-images/ai_2.jpg" class="d-block custom_height w-100" alt="..." />
+          <div class="carousel-caption">
+            <div class="custom">
+              <div class="my-auto" id="transparent">
+                <h2 class="h-2 pt-2">Wayfinder Kiosk</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <button class="btn" id="btn-contact-slid">Learn more</button>
+              </div>
+              <div class="taimoor">
+                <!-- <img src="./Images/home-banner-kiosk-wayfinder-pic.png" class="img-responsive w-100 h-auto" alt="" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./my-images/ai_4.png" class="d-block custom_height w-100" alt="..." />
+          <div class="carousel-caption">
+            <div class="custom">
+              <div class="my-auto" id="transparent">
+                <h2 class="h-2 pt-2">Wayfinder Kiosk</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <button class="btn" id="btn-contact-slid">Learn more</button>
+              </div>
+              <div class="taimoor ms-5">
+                <!-- <img src="./Images/home-banner-ALS-pic(1).png" class="img-responsive w-100 h-auto" alt="" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./my-images/ai_4.png" class="d-block custom_height w-100" alt="..." />
+          <div class="carousel-caption">
+            <div class="custom">
+              <div class="my-auto" id="transparent">
+                <h2 class="h-2 pt-2">Wayfinder Kiosk</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <button class="btn" id="btn-contact-slid">Learn more</button>
+              </div>
+              <div class="taimoor ms-5">
+                <!-- <img src="./Images/VALS-pic.png" class="img-responsive w-100 h-auto" alt="" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!--==============================================================================- slidba for mobile=============================================== -->
+
+  <div class="container-fluid text-center d-lg-none d-md-none d-xl-none d-xxl-none d-block m-0" id="max-height">
+    <div id="carouselExampleControls" class="carousel slide m-0" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active row justify-content-center" id="hihi1">
+          <!-- <div class=" col-8 col-sm-8 col-md-6 mx-auto mt-5">
+            <img src="./my-images/Al_1.jpg" alt="" class="w-100  m-auto p-4  ms-5"
+              id="image_height1">
+          </div> -->
+          <div class="col-10 d-block mx-auto" id="slider_pad">
+            <h1 class=" ">Lorem, ipsum dolor.</h1>
+            <p class="mx-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, molestiae harum? Lorem ipsum dolor sit.
+            </p>
+
+            <button class="btn mt-2" id="btn-contact-slid">Learn more</button>
+          </div>
+        </div>
+
+        <div class="carousel-item row justify-content-center" id="hihi2">
+          <!-- <div class="col-8  mx-auto mt-0">
+            <img src="./my-images/home-banner-ALS-pic(1).png" alt="" class="w-100  p-4  " id="image_height2">
+          </div> -->
+          <div class="col-10 mx-auto" id="slider_pad">
+            <h1 class="">Disrupting the Computer Vision landscape</h1>
+            <p class="mx-2">
+              Disrupt Lab is an intelligent visual AI company, designed to
+              extract data from visual Sensors.
+            </p>
+
+            <button class="btn mt-2" id="btn-contact-slid">Learn more</button>
+          </div>
+        </div>
+        <div class="carousel-item row justify-content-center" id="hihi3">
+          <!-- <div class="col-8 mx-auto">
+            <img src="./my-images/VALS-pic.png" alt="" class="w-100 p-4  " id="image_height3">
+          </div> -->
+          <div class="col-10 mx-auto" id="slider_pad">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p class="mx-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex,
+              quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, modi?
+            </p>
+
+            <button class="btn mt-2" id="btn-contact-slid">Learn more</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- <!==================================-- 3rd section --=======================================> -->
+  <div class="container-fluid my-3">
+    <div class="row justify-content-center">
+      <!-- for image  -->
+
+      <div class="col-lg-4 col-md-4 mx-auto my-auto  h-auto mb-sm-3">
+        <img src="./my-images/Al_1.jpg" alt="" class="img-fluid" />
+      </div>
+      <!-- for text and button   -->
+      <div class="col-lg-6 col-md-6 text-center my-auto">
+        <h1 class="display-4">OUR BIG IDEA</h1>
+        <!-- <p class="text-muted h3">The Smarter Localization Systems</p> -->
+        <p class="lead">
+          Our mission is to become the recognized leader in developing
+          computer vision solutions and products in Visual AI domain.
+        </p>
+        <button class="btn mx-2" id="btn-more">More Info</button>
+        <button class="btn" id="btn-contact">Contact Us</button>
+      </div>
+    </div>
+  </div>
+  <!-- ======================================= Trusted Section =========================================== -->
+
+  <div class="container-fluid my-5">
+    <h1 class="text-center fw-bold h4 mb-5">Trusted By</h1>
+    <div class="row text-center">
+      <div class="col-12 m-auto">
+        <div class="owl-carousel owl-theme">
+          <div class="item mb-4">
+            <div class="card border-0 shadow">
+              <img id="my_img" src="./my-images/trused_1.png" alt="" class="card-img-top" />
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="card border-0 shadow">
+              <img id="my_img" src="./my-images/trusted_2.jpg" alt="" class="card-img-top" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 shadow">
+              <img id="my_img" src="./my-images/trusted_4.png" alt="" class="card-img-top" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 shadow">
+              <img id="my_img" src="./my-images/trusted_5.png" alt="" class="card-img-top" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 shadow">
+              <img id="my_img" src="./my-images/trusted_6.png" alt="" class="card-img-top" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 shadow">
+              <img id="my_img" src="./my-images/trusted_7.png" alt="" class="card-img-top" />
+            </div>
+          </div>
+          <div class="item">
+            <div id="my_img" class="card border-0 shadow">
+              <img src="./my-images/trusted_8.jpg" alt="" class="card-img-top" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 shadow">
+              <img id="my_img" src="./my-images/trusted_9.png" alt="" class="card-img-top" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== Product Section ====================================== -->
+
+  <!-- for products  -->
+
+  <div class="container-lg">
+    <div class="row">
+      <div class="col pt-5">
+        <h1 class="text-uppercase">products</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-5">
+      <!-- col 1 -->
+      <div class="col-lg-4 text-center my-4 mx-2">
+        <img src="./my-images/shop_2.jpg" alt="" class="my_img mb-2" />
+        <div>
+          <a href="#" class="fw-bold lead text-muted text-center text-decoration-none">Softwares</a>
+        </div>
+      </div>
+      <!-- col 2 -->
+      <div class="col-lg-4 text-center mx-2 my-4">
+        <img src="./my-images/product-2.jpeg" alt="" class="my_img mb-2" />
+        <div>
+          <a href="#" class="lead text-muted text-center text-decoration-none fw-bold">IOT</a>
+        </div>
+      </div>
+      <!-- col3 -->
+      <div class="col-lg-3 text-center mx-2 my-4">
+        <img src="./my-images/producr-3.jpg" alt="" class="my_img mb-2" />
+        <div>
+          <a href="#" class="lead text-muted text-center text-decoration-none fw-bold">
+            Vedio Analytics</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- product the end  -->
+
+  <!-- ============================================ Why Averos SEction =============================== -->
+
+  <!-- why choose averos section  -->
+  <div class="container-lg border-bottom border-2">
+    <div class="row">
+      <div class="col border-bottom border-2">
+        <h1 class="display-5 fw-bold text-center my-3">
+          Why Choose Distrub VA
+        </h1>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="col-lg-4 my-3">
+        <h1 class="h5">VISUAL AI INSPECTION</h1>
+        <p class="lead text-muted">
+          Broad capabilities for location tracking, motion tracking or
+          proximity-based applications. Use technologies based on BLE, UWB,
+          GPS for the most optimal solutions.
+        </p>
+      </div>
+
+      <div class="col-lg-4 my-3">
+        <h1 class="text-uppercase h5">Costum AI</h1>
+        <p class="lead text-muted">
+          Several models of RTLS Scanners and BLE beacons, which are designed
+          and developed by AVEROS.
+        </p>
+      </div>
+
+      <div class="col-lg-4 my-3">
+        <h1 class="text-uppercase h5">Complete Demo</h1>
+        <p class="lead text-muted">
+          Launch pilot projects from day #1 using the demo kits or custom
+          configurations. Reduce time, expenses and risks. It enhances safety
+          and security.
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h1 class="h5 text-uppercase">Software Features</h1>
+        <p class="lead text-muted">
+          We provide cost effective end-to-end solutions & integration ready
+          SDKs to cater healthcare, supermarket & malls, airports, industries,
+          logistics & warehouses, smart buildings & others.
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h1 class="h5 text-uppercase">Integration with 3rd Party</h1>
+        <p class="lead text-muted ">
+          Well documented APIs and SDKs that allow easy integration with any
+          3rd party IP camera & access control.
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h1 class="h5 text-uppercase">3rd-party Hardware Support</h1>
+        <p class="lead text-muted ">
+          You can use your existing BLE beacons or RTLS tags with our ALS
+          (AVEROS Location Sphere) software..
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================== Application Section ===================================== -->
+
+  <!-- application areas -->
+
+  <div class="container-lg mt-4">
+    <h1 class="text-uppercase h1">application areas</h1>
+  </div>
+  <div class="container-lg my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-5 text-center mx-4 my-3">
+        <img src="./my-images/smart-building.png" alt="" class="my_area w-100" />
+        <div class="my-2">
+          <a href="#" class="text-decoration-none text-muted fw-bold h5 text-uppercase">
+            Smart Buildings</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 text-center mx-4 my-3">
+        <img src="./my-images/Healthcare-1.png" alt="" class="my_area w-100" />
+        <div class="my-2">
+          <a href="#" class="text-decoration-none text-muted fw-bold h5 text-uppercase">
+            Health Care</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 text-center mx-4 my-3">
+        <img src="./my-images/industry.png" alt="" class="my_area w-100" />
+        <div class="my-2">
+          <a href="#" class="text-decoration-none text-muted fw-bold h5 text-uppercase">
+            industries</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================== Footer Section ========================================= -->
+
+  <footer class="footer_main">
+    <div class="footer_area ">
+      <div class="container custom_con">
+        <div class="row justify-content-center custom_row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="">
+              <li class="List_style">
+                <h5 class="mb-4">VISUAL AI INSPECTION</h5>
+                <ul class="list-unstyled ul_custom">
+                  <li><a href="./pages/medical.html">Medical (QAOS)</a></li>
+                  <li><a href="./pages/caps-filling-inspection.html">Caps Filing Inspection</a></li>
+                  <li><a href="./pages/lays-chips.html">Lays Chips Counting & Detection</a></li>
+                  <li><a href="./pages/laser-maker.html">Laser Marker Cone</a></li>
+                  <li><a href="./pages/textile-soft.html">Textile(Soft Package Project)</a></li>
+                  <li><a href="./pages/injection-mold.html">Injection Mold Inspection</a></li>
+                  <li><a href="">Rice Quality Inspection</a></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="mx-1">
+              <li class="List_style">
+                <h5 class="mb-4">Video Analytics</h5>
+                <ul class="list-unstyled text-muted ul_custom">
+                  <h1 class="h6">Retail Shops</h1>
+                  <li><a href="./pages/RS-cctv-moni.html">CCTV Monitoring & Alerts</a></li>
+                  <li><a href="./pages/coustomer-tracking.html">Customer Tracking</a></li>
+                  <h1 class="h6">Factory</h1>
+                  <li><a href="./pages/factory-cctv.html">CCTV Monitoring & Alerts</a></li>
+                  <li><a href="./pages/smoke-detaction.html">Smoke Detection</a></li>
+                  <h1 class="h6">Security</h1>
+                  <li><a href="./pages/gun-detaction.html">Gun Detection </a></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="">
+              <li class="List_style">
+                <h5 class="mb-1">OCR Solution</h5>
+                <ul class="list-unstyled ul_custom">
+                  <li><a href="./pages/box-ocr(inventory).html">Box OCR (Inventory)</a></li>
+                  <li><a href="./pages/CNIC-Detaction.html">CNIC Number Detection</a></li>
+                  <li><a href="./pages/PDF-data.html">PDF Data Extraction</a></li>
+                  <li><a href="">Receipts Data Extraction</a></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="">
+              <li class="List_style">
+                <h5 class="mb-1">Company</h5>
+                <ul class="list-unstyled ul_custom">
+                  <li><a href="">Company 1</a></li>
+                  <li><a href="">Company 2</a></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+            <div class="">
+              <li class="List_style">
+                <h5 class="mb-4">Contact US</h5>
+                <ul class="list-unstyled text-muted ul_custom">
+                  <li>
+                    <a href="https://www.google.com/">Privacy Policy</a>
+                  </li>
+                  <li><a href="">About</a></li>
+                </ul>
+              </li>
+            </div>
+          </div> -->
+
+          <div class="col-lg-8 text-center col-md-8 col-sm-12 col-xs-12">
+            <div class="text-center">
+              <img src="./my-images/logo.png" class="w-100" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================== Footer Bottom Section ======================================= -->
+    <footer class="footer_down">
+      <div class="container py-3">
+        <div class="row pt-2 d-flex flex-wrap">
+          <div class="col-sm-5">
+            <p>© Copyright 2022, (DISTRUB VA). All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-sm-center">
+            <div class="text-light">
+              <a href="https://www.facebook.com/thedisruptlabs/" target="_blank" class="m-4"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://twitter.com/thedisruptlabs" class="m-4" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a href="https://pk.linkedin.com/company/thedisruptlabs" target="_blank" class="m-4"><i
+                  class="bi bi-linkedin"></i></a>
+              <a href="https://www.youtube.com/c/DisruptionNetworkLab" target="_blank" class="m-4"><i
+                  class="bi bi-youtube"></i></a>
+                
+              <h4 style="float: right" class="">Follow Us</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </footer>
+
+  <!-- ======== jquery link ======== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- ============= Bootstrap js ================ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- ============== for function ====== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: false,
+      autoplay: 300,
+      autoplay: true,
+      autoplayTimeout: 1500,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 2,
+        },
+        400: {
+          items: 3,
+        },
+        600: {
+          items: 4,
+        },
+
+        1000: {
+          items: 8,
+        },
+      },
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // make it as accordion for smaller screens
+      if (window.innerWidth > 992) {
+        document
+          .querySelectorAll(".navbar .nav-item")
+          .forEach(function (everyitem) {
+            everyitem.addEventListener("mouseover", function (e) {
+              let el_link = this.querySelector("a[data-bs-toggle]");
+
+              if (el_link != null) {
+                let nextEl = el_link.nextElementSibling;
+                el_link.classList.add("show");
+                nextEl.classList.add("show");
+              }
+            });
+            everyitem.addEventListener("mouseleave", function (e) {
+              let el_link = this.querySelector("a[data-bs-toggle]");
+
+              if (el_link != null) {
+                let nextEl = el_link.nextElementSibling;
+                el_link.classList.remove("show");
+                nextEl.classList.remove("show");
+              }
+            });
+          });
+      }
+      // end if innerWidth
+    });
+      // DOMContentLoaded  end
+  </script>
+</body>
+
+</html>
